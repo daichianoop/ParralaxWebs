@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Parallax</title>
+    <style>
+      .parallax1,
+      .parallax2,
+      .parallax3,
+      .parallax4 {
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .parallax1 {
+        background-image: url("img/pexels-pixabay-159420.jpg");
+      }
+      .parallax2 {
+        position: relative;
+        background-image: url("img/pexels-pixabay-247929.jpg");
+      }
+      .parallax3 {
+        background-image: url("img/pexels-pixabay-247671.jpg");
+        min-height: 200px;
+      }
+      .parallax4 {
+        background-image: url("img/pexels-leonie-fahjen-92866.jpg");
+        position: relative;
+        height: max-content;
+      }
+
+      .content {
+        height: 100px;
+        background-color: burlywood;
+      }
+      .top1,.top2 {
+        background-color: #191516;
+        width: 200px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        color: #c1ae7c;
+        text-align: center;
+        padding: 20px 40px;
+        top: 200px;
+        right: 450px;
+      }
+      .top2 {
+        color: black;
+        background: inherit;
+        box-shadow: 0 0 5px 0;
+        backdrop-filter: blur(20px);
+      }
+      body {
+        background-image: url("img/pexels-leonie-fahjen-92866.jpg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body style="background-color: black; margin: 0px">
+    <div class="parallax1"></div>
+    <div class="content">This is parralax</div>
+    <div class="parallax2">
+      <div class="top1">This is cool</div>
+    </div>
+    <div class="content">This is parralax</div>
+    <div class="parallax3"></div>
+    <div class="content">This is parralax</div>
+    <div class="parallax4">
+      <div class="top2">This is cool</div>
+    </div>
+    <div class="content">This is parralax</div>
+  </body>
+</html>
